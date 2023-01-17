@@ -1,0 +1,172 @@
+// Base font size (body font-size)
+$em-base: 17px;
+$fz-default: $em-base;
+$fz-defaultplus: 18px;
+$fz-small: 14px;
+$fz-smallplus: 19px;
+$fz-medium: 20px;
+$fz-mediumplus: 22px;
+$fz-large: 50px;
+
+// Media query settings (used in when() mixin):
+$mobile-range: (0, 749px);
+$tablet-portrait-range: (750px, 991px);
+$desktop-range: (992px, 1440px);
+
+// Colors
+$white: #fff;
+$black: #202020;
+$blue: #1E64C8;
+$brand-primary: #1E64C8;
+$brand-secondary: #FFD200;
+$brand-tertiary: #e9f0fa;
+$border-color: #CCCCCC;
+$border-color-light: #DDDDDD;
+$brand-warning: #fffae5;
+$brand-disabled: #B4B4B4;
+$brand-faculty1: #F1A42B;
+$brand-faculty2: #DC4E28;
+$brand-faculty3: #2D8CA8;
+$brand-faculty4: #E85E71;
+$brand-faculty5: #8BBEE8;
+$brand-faculty6: #AEB050;
+$brand-faculty7: #825491;
+$brand-faculty8: #FB7E3A;
+$brand-faculty9: #27ABAD;
+$brand-faculty10: #BE5190;
+$brand-faculty11: #71A860;
+
+
+// Component colors
+$default-text-color: $black;
+$dark-text-color: #646464;
+
+
+// Font families
+$default-font-family: 'PannoTextNormal', Arial, sans-serif;
+$semibold-font-family: 'PannoTextSemiBold', Arial, sans-serif;
+$medium-font-family: 'PannoTextMedium', Arial, sans-serif;
+$light-font-family: 'PannoTextLight', Arial, sans-serif;
+
+// Component font families
+$body-text-font-family: $light-font-family;
+$header-font-family: $medium-font-family;
+
+
+//numbers
+$maxwidth-container: 1280px;
+$maxwidth-content: 750px;
+$padding-default: 20px;
+$padding-default-mobile: 20px;
+$padding-large: 60px;
+$padding-large-mobile: 30px;
+$margin-default-horizontal: $padding-default;
+$margin-default-vertical: 30px;//43px;
+$margin-default-vertical-mobile: 25px;
+$margin-default-vertical-small: 20px;
+$margin-default-vertical-small-mobile: 22px;
+$margin-large: 60px;
+$transition-duration-default: .15s;
+$transition-ease-default: ease-in-out;
+$line-height-base: 21/17;
+$line-height-medium: 26/20;
+$line-height-medium-caps: 20/20;
+$line-height-large: 50/50;
+$grid-gutter-width: 20px;
+
+
+// Font awesome font path
+//$fa-font-path: "../fonts/font-awesome" !default;
+
+// Extra font colors
+$discreet-text-color: lighten($default-text-color, 40%);
+
+// Check icon
+$halflings-ok: "\e013";
+$check-icon: $halflings-ok;
+
+// Inpage navigation
+$zindex-inpage-nav-container: 1010;
+
+// Popovers
+$popover-bg: $brand-tertiary;
+$popover-title-bg: $brand-primary;
+$popover-arrow-color: $brand-tertiary;
+$ugent-popover-title-color: $white;
+$popover-arrow-outer-color: $border-color;
+$popover-border-color: $border-color;
+$popover-max-width: $maxwidth-content;
+
+// Navbar
+$navbar-padding-y: 0;
+$navbar-toggler-padding-y: .50rem;
+$navbar-toggler-font-size: $fz-small;
+$navbar-light-toggler-border-color: $white;
+$navbar-light-color: $white;
+$navbar-light-hover-color: $white;
+$navbar-light-active-color: $white;
+$navbar-light-toggler-border-color: $white;
+
+// Accordion
+$accordion-border-width: 0;
+$accordion-button-color: $brand-primary;
+$accordion-button-active-color: $white;
+$accordion-button-bg: $brand-tertiary;
+$accordion-button-active-bg: $brand-primary;
+$accordion-body-padding-x: 0;
+$accordion-body-padding-y: 0;
+$accordion-button-padding-y: .75rem;
+$accordion-button-padding-x: .5rem;
+$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$brand-primary}" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/></svg>');
+$accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$white}" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg>');
+$accordion-button-focus-box-shadow: none;
+
+// Datetimepicker (https://getdatepicker.com/)
+$td-light: $white;
+$td-widget-background: $td-light;
+$td-font-color: $black;
+$td-timepicker-font-size: 1.2em;
+$td-active-bg: $brand-primary;
+$td-active-color: $td-light;
+$td-active-border-color: $brand-primary;
+$td-border-radius: 0;
+$td-btn-hover-bg: $brand-tertiary;
+$td-disabled-color: #6c757d;
+$td-alternate-color: rgba(0, 0, 0, 0.38);
+$td-secondary-border-color: #ccc;
+$td-secondary-border-color-rgba: rgba(0, 0, 0, 0.2);
+$td-primary-border-color: $td-light;
+$td-text-shadow: none;
+$td-dow-color: rgba(0, 0, 0, 0.5);
+
+$td-dark: $td-light;
+$td-dark-widget-background: $td-widget-background;
+$td-dark-font-color: $td-font-color;
+$td-dark-active-bg: $td-active-bg;
+$td-dark-active-color: $td-active-color;
+$td-dark-active-border-color: $td-active-border-color;
+$td-dark-btn-hover-bg: $td-btn-hover-bg;
+$td-dark-disabled-color: $td-disabled-color;
+$td-dark-alternate-color: $td-alternate-color;
+$td-dark-secondary-border-color: $td-secondary-border-color;
+$td-dark-secondary-border-color-rgba: $td-secondary-border-color-rgba;
+$td-dark-primary-border-color: $td-dark $td-primary-border-color;
+$td-dark-text-shadow: $td-text-shadow;
+$td-dark-dow-color: $td-dow-color;
+
+// Select
+$form-select-color: $white;
+$form-select-bg: $brand-primary;
+$form-select-padding-y: 10px;
+$form-select-border-radius: 0;
+$form-select-font-size: 16px;
+$form-select-font-weight: bold;
+$form-select-border-width: 0;
+$form-select-box-shadow: none;
+$form-select-bg-size: 24px 24px;
+$form-select-indicator: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$white}" class="bi bi-arrow-down-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>');
+
+// Checks & radios
+$form-check-margin-bottom: 0.5rem;
+$form-check-input-border: 2px solid $brand-primary;
+$form-check-input-border-radius: 0;

@@ -1,0 +1,23 @@
+{
+  "name": "ugent-huisstijl",
+  "version": "2.0.0",
+  "description": "UGent Huisstijl 2.0",
+  "private": true,
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "filename-regex": "^2.0.1",
+    "laravel-mix": "^6.0.49",
+    "mix-html-builder": "^0.9.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "@eonasdan/tempus-dominus": "^6.2.9",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2"
+  }
+}

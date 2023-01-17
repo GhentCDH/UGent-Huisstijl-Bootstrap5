@@ -1,0 +1,72 @@
+// Bootstrap 3 vars and mixins for backwards compability 
+
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
+$screen-phone: $screen-xs-min;
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$screen-tablet: $screen-sm-min;
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+$screen-desktop: $screen-md-min;
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+$screen-lg-desktop: $screen-lg-min;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+$input-bg-disabled: $input-disabled-bg;
+
+$btn-primary-color: #fff !default;
+
+$gray-base: #000 !default;
+$gray-light: lighten($gray-base, 46.7%) !default; // #777
+
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$state-danger-bg: #f2dede !default;
+$alert-danger-bg: $state-danger-bg !default;
+
+$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$alert-danger-border: $state-danger-border !default;
+
+$state-danger-text: #a94442 !default;
+$alert-danger-text: $state-danger-text !default;
+
+@mixin tab-focus() {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+@mixin scale($ratio...) {
+    -webkit-transform: scale($ratio);
+        -ms-transform: scale($ratio); // IE9 only
+         -o-transform: scale($ratio);
+            transform: scale($ratio);
+}
+
+@mixin transition-transform($transition...) {
+    -webkit-transition: -webkit-transform $transition;
+       -moz-transition: -moz-transform $transition;
+         -o-transition: -o-transform $transition;
+            transition: transform $transition;
+}
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+        -ms-transform: rotate($degrees); // IE9 only
+         -o-transform: rotate($degrees);
+            transform: rotate($degrees);
+}
+
+.container-fluid {
+    @extend .fluid-container;
+}
+
+.pull-right {
+    @extend .float-end;
+}
+
+$bs-datetimepicker-secondary-border-color-rgba: $btn-primary-color;
+$bs-datetimepicker-text-shadow: none;

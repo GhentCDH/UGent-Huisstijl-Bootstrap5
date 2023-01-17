@@ -1,0 +1,37 @@
+// https://getdatepicker.com/
+// style overrides, default vars are overriden in scss/_settings.scss 
+.tempus-dominus-widget {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid $brand-primary;
+    
+    .calendar-header{
+        background-color: $brand-primary;
+        padding: 10px 0;
+        color: $white;
+        i {
+            color: $white;
+        }
+    }
+
+    &.light .date-container-days .dow,
+    &.dark .date-container-days .dow {
+        color: $brand-primary;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    i {
+        color: $brand-primary;
+    }
+
+    &.dark {
+        color: $black;
+    }
+}
+
+div[data-td-toggle="datetimepicker"] .input-group-text{
+    border-radius: 0;
+    background-color: $brand-primary;
+    color: $white;
+}
