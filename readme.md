@@ -8,7 +8,7 @@ This is an **unofficial build** and a **best effort** upgrade to the latest [Boo
 While most custom Bootstrap 3 huisstijl CSS classes are backwards compatible, most components have a new HTML markup structure (like the navbar). You cannot just replace the old css and javascript files, you will need to rewrite your HTML code. (use the [src/html/partials](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/html/partials/) as a reference)
 
 ## No JQuery
-Only the official Bootstrap javascript plugins are included, if you realy need JQuery (or other plugins) you need to include them yourself.
+Only the official Bootstrap javascript plugins are included, if you really need JQuery (or other plugins) you need to include them yourself.
 
 ## Usage
 Copy the dist folder in your project and include the UGent Huisstijl Bootstrap 5 [screen.css](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/dist/css/screen.css) and [main.js](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/dist/js/main.js) file. Or you can require this package in your project and import [screen.scss](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/scss/screen.scss) and the [bootstrap esm modules](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/js/main.js). 
