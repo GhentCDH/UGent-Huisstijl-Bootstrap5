@@ -11,7 +11,7 @@ While most custom Bootstrap 3 huisstijl CSS classes are backwards compatible, mo
 Only the official Bootstrap javascript plugins are included, if you realy need JQuery (or other plugins) you need to include them yourself.
 
 ## Usage
-Copy the dist folder in your project and include the UGent Huisstijl Bootstrap 5 screen.css and main.js file. Or you can require this package in your project and import [screen.scss](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/scss/screen.scss) and the [bootstrap esm modules](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/js/main.js). 
+Copy the dist folder in your project and include the UGent Huisstijl Bootstrap 5 [screen.css](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/dist/css/screen.css) and [main.js](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/dist/js/main.js) file. Or you can require this package in your project and import [screen.scss](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/scss/screen.scss) and the [bootstrap esm modules](https://github.ugent.be/Onderwijstechnologie/UGent-Huisstijl-Bootstrap5/blob/main/src/js/main.js). 
 
 ## Templates
 The old Bootstrap 3 templates ([https://styleguide.ugent.be/websites/templates.html](https://styleguide.ugent.be/websites/templates.html)) are recreated with the unofficial UGent Huisstijl Bootstrap 5.2 build. 
