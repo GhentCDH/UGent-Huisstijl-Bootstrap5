@@ -32530,7 +32530,7 @@ div[data-td-toggle=datetimepicker] .input-group-text {
 }
 @media (min-width: 767px) {
   .pageheader .navbar {
-    min-height: 110px;
+    min-height: 125px;
   }
 }
 .pageheader .navbar input {
