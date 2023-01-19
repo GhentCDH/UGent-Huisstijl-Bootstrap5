@@ -32602,6 +32602,9 @@ div[data-td-toggle=datetimepicker] .input-group-text {
     padding: 10px 1rem;
   }
 }
+.pageheader #nav-search {
+  z-index: 10;
+}
 
 .breadcrumb a:hover, .breadcrumb a:focus {
   color: #202020;
@@ -32738,4 +32741,8 @@ textarea.form-control {
 
 .date-container {
   background-color: #fff;
+}
+
+.branding-container h1, .branding-container .h1 {
+  display: inline-block;
 }
