@@ -32525,9 +32525,12 @@ div[data-td-toggle=datetimepicker] .input-group-text {
   color: #fff;
 }
 
+.pageheader {
+  position: relative;
+}
 @media (min-width: 767px) {
   .pageheader .navbar {
-    min-height: 128px;
+    min-height: 110px;
   }
 }
 .pageheader .navbar input {
