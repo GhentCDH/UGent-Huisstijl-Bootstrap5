@@ -42,5 +42,10 @@
     "/images/reportage.jpg": "/images/reportage.jpg",
     "/js/main.js": "/js/main.js",
     "/js/main+tempus-dominus.js": "/js/main+tempus-dominus.js",
-    "/js/bootstrap.min.js.map": "/js/bootstrap.min.js.map"
+    "/js/bootstrap.min.js.map": "/js/bootstrap.min.js.map",
+    "/images/apple-icon-180x180.png": "/images/apple-icon-180x180.png",
+    "/images/favicon-16x16.png": "/images/favicon-16x16.png",
+    "/images/favicon-192x192.png": "/images/favicon-192x192.png",
+    "/images/favicon-32x32.png": "/images/favicon-32x32.png",
+    "/images/favicon-48x48.png": "/images/favicon-48x48.png"
 }
