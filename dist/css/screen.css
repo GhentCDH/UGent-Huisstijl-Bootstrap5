@@ -30610,6 +30610,11 @@ a .fa {
     line-height: 40px;
   }
 }
+.content-header-home .display h2, .content-header-home .display .h2 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+}
 @media (min-width: 768px) {
   .content-header-home .display {
     position: absolute;
@@ -30787,7 +30792,7 @@ a .fa {
 .btn-secondary:focus, .btn-secondary:hover,
 .btn-secondary i:focus,
 .btn-secondary i:hover {
-  background-color: #fff;
+  background-color: #fff0b7;
 }
 
 .btn-default,
