@@ -302,3 +302,7 @@ textarea.form-control {
 .branding-container h1 {
     display: inline-block;
 }
+
+.form-control[type=file] {
+    line-height: 1.5;
+}
