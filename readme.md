@@ -28,7 +28,7 @@ run `$ npm install` in the root folder to install the dependencies.
 ### Building
 run `$ npx mix watch` to build and start a development webserver. Mix will recompile every time you change a file. Browsersync will automatically monitor your files for changes, and inject any changes into the browser - all without requiring a manual refresh.
 
-run `$ npm mix --production` if you're ready to build for production.
+run `$ npx mix --production` if you're ready to build for production.
 
 ## Documentation
 - [Bootstrap v5.2 Docs](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
