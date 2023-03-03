@@ -12,7 +12,7 @@ mix.setPublicPath('dist')
     .combine([
         'node_modules/@popperjs/core/dist/umd/popper.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js', 
-        'node_modules/@eonasdan/tempus-dominus/dist/js/tempus-dominus.min.js'], 'dist/js/main+tempus-dominus.js')
+        'node_modules/@eonasdan/tempus-dominus/dist/js/tempus-dominus.min.js'], 'dist/js/main-tempus-dominus.js')
     .copy('node_modules/bootstrap/dist/js/bootstrap.min.js.map', 'dist/js/bootstrap.min.js.map')
     .html({
         htmlRoot: './src/templates/*.html',
