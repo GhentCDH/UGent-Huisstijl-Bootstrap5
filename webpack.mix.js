@@ -14,11 +14,6 @@ mix.setPublicPath('dist')
         'node_modules/bootstrap/dist/js/bootstrap.min.js', 
         'node_modules/@eonasdan/tempus-dominus/dist/js/tempus-dominus.min.js'], 'dist/js/main-tempus-dominus.js')
     .copy('node_modules/bootstrap/dist/js/bootstrap.min.js.map', 'dist/js/bootstrap.min.js.map')
-    .html({
-        htmlRoot: './src/templates/*.html',
-        output: 'templates',
-        partialRoot: './src/html/partials'
-    })
     .browserSync({
         server: {
             baseDir: "dist",
@@ -29,3 +24,12 @@ mix.setPublicPath('dist')
             'dist/**/*.+(css|js)'
         ]
     });
+
+    if (!mix.inProduction()) {
+        mix.html({
+            htmlRoot: './src/templates/*.html',
+            output: 'templates',
+            partialRoot: './src/html/partials',
+            minify: false
+        })
+    }
