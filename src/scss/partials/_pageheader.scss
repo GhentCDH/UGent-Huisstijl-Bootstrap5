@@ -28,7 +28,7 @@
       padding: 0 0 0 20px;
       color: $white;
     }
-    @media(max-width: $screen-sm-min) {
+    @include media-breakpoint-down(md){
       font-size: 18px;
     }
 

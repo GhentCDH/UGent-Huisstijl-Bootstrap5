@@ -65,7 +65,7 @@
 .pageheader {
     position: relative;
     .navbar {
-        @media(min-width: $screen-xs-max){
+        @include media-breakpoint-up(md) { 
             min-height: 110px;
         }
         input {
