@@ -117,7 +117,7 @@
     }
     .nav-primary {
         background-color: $white;
-        @media(min-width: $screen-xs-max){
+        @include media-breakpoint-up(md){
             :first-child a {
                 padding-left: 0;
             }
