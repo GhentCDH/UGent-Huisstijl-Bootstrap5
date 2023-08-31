@@ -13,11 +13,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    font-style: italic;
-  }
+  //&.disabled,
+  //&[disabled],
+  //fieldset[disabled] & {
+  //  font-style: italic;
+  //}
 }
 
 .btn-clean {
