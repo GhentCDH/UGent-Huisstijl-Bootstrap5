@@ -156,14 +156,22 @@ $td-dark-primary-border-color: $td-dark $td-primary-border-color;
 $td-dark-text-shadow: $td-text-shadow;
 $td-dark-dow-color: $td-dow-color;
 
+// Input
+$input-padding-x: 15px;
+$input-padding-y: 8px;
+$input-border-radius: 0;
+$input-border-width: 1px;
+$input-padding-x-lg: 15px;
+$input-padding-y-lg: 13px;
+
 // Select
 $form-select-color: $white;
 $form-select-bg: $brand-primary;
-$form-select-padding-y: 10px;
-$form-select-border-radius: 0;
-$form-select-font-size: 16px;
+$form-select-padding-y: $input-padding-y;
+$form-select-border-radius: $input-border-radius;
+$form-select-font-size: $fz-default;
 $form-select-font-weight: bold;
-$form-select-border-width: 0;
+$form-select-border-width: $input-border-width;
 $form-select-box-shadow: none;
 $form-select-bg-size: 24px 24px;
 $form-select-indicator: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$white}" class="bi bi-arrow-down-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>');
@@ -171,12 +179,31 @@ $form-select-indicator: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/20
 // Checks & radios
 $form-check-margin-bottom: 0.5rem;
 $form-check-input-border: 2px solid $brand-primary;
-$form-check-input-border-radius: 0;
+$form-check-input-border-radius: $input-border-radius;
 
 // Buttons
-$btn-padding-x: 15px;
-$btn-padding-y: 13px;
+$btn-padding-x: $input-padding-x-lg;
+$btn-padding-y: $input-padding-y-lg;
 $btn-font-family: $medium-font-family;
 $btn-font-size: $fz-default;
-$btn-line-height: 15px;
+$btn-line-height: $line-height-base;
+$btn-border-radius: $input-border-radius;
+$btn-border-width: $input-border-width;
 
+$btn-padding-x-md: $input-padding-x;
+$btn-padding-y-md: $input-padding-y;
+$btn-font-size-md: $btn-font-size;
+$btn-border-radius-md: $btn-border-radius; 
+
+$btn-padding-y-lg: $input-padding-x-lg;
+$btn-padding-x-lg: $input-padding-y-lg;
+$btn-font-size-lg: $btn-font-size;
+$btn-border-radius-lg: $btn-border-radius;
+
+// Pagination
+$pagination-padding-x: $input-padding-x;
+$pagination-padding-y: $input-padding-y;
+$pagination-border-radius: $input-border-radius;
+$pagination-border-width: $input-border-width;
+$pagination-font-size: $fz-small;
+$pagination-font-family: $medium-font-family;
