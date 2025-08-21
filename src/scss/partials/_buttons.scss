@@ -1,23 +1,108 @@
 .btn {
-  display: inline-block;
-  padding: 13px 15px 12px;
-  color: $white;
-  background-color: $brand-primary;
-  //text-transform: uppercase;
-  font-size: $fz-default;
-  line-height: 15px;
-  font-family: $medium-font-family;
-  border: 0;
-  max-width: calc(100vw - 30px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  @include button-variant($primary, $primary, $white);
+}
 
-  //&.disabled,
-  //&[disabled],
-  //fieldset[disabled] & {
-  //  font-style: italic;
-  //}
+//
+// Alternate buttons
+//
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @if $color == "light" {
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
+    } @else if $color == "dark" {
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: tint-color($value, $btn-hover-bg-tint-amount),
+        $hover-border: tint-color($value, $btn-hover-border-tint-amount),
+        $active-background: tint-color($value, $btn-active-bg-tint-amount),
+        $active-border: tint-color($value, $btn-active-border-tint-amount)
+      );
+    } @else if $color == "primary" {
+      @include button-variant(
+        $tertiary,
+        $tertiary,
+        $color: $primary,
+        $hover-background: $primary,
+        $hover-border: $primary,
+        $hover-color: $white,
+        $active-background: $primary,
+        $active-border: $primary,
+        $active-color: $white,
+      );
+    } @else if $color == "secondary" {
+      @include button-variant(
+        $secondary,
+        $secondary,
+        $color: $black,
+        $hover-background: $primary,
+        $hover-border: $primary,
+        $hover-color: $white,
+        $active-background: $primary,
+        $active-border: $primary,
+        $active-color: $white,
+      );
+    } @else {
+      @include button-variant($value, $value);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+    --#{$prefix}btn-bg: transparent;
+  }
+}
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  --#{$prefix}btn-font-weight: #{$font-weight-normal};
+  --#{$prefix}btn-color: #{$btn-link-color};
+  --#{$prefix}btn-bg: transparent;
+  --#{$prefix}btn-border-color: transparent;
+  --#{$prefix}btn-hover-color: #{$btn-link-hover-color};
+  --#{$prefix}btn-hover-border-color: transparent;
+  --#{$prefix}btn-active-color: #{$btn-link-hover-color};
+  --#{$prefix}btn-active-border-color: transparent;
+  --#{$prefix}btn-disabled-color: #{$btn-link-disabled-color};
+  --#{$prefix}btn-disabled-border-color: transparent;
+  --#{$prefix}btn-box-shadow: 0 0 0 #000; // Can't use `none` as keyword negates all values when used with multiple shadows
+  --#{$prefix}btn-focus-shadow-rgb: #{$btn-link-focus-shadow-rgb};
+
+  text-decoration: $link-decoration;
+  @if $enable-gradients {
+    background-image: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus-visible {
+    color: var(--#{$prefix}btn-color);
+  }
+
+  &:hover {
+    color: var(--#{$prefix}btn-hover-color);
+    background-color: $white;
+  }
+
+  // No need for an active state here
 }
 
 .btn-clean {
@@ -27,8 +112,6 @@
 }
 
 .btn-primary {
-  background-color: $brand-tertiary;
-
   &.right {
     padding-right: 30px;
     .glyphicon {
@@ -36,9 +119,26 @@
     }
   }
 }
+
 .btn-primary,
 .btn-primary i {
   color: $brand-primary;
+
+  &:focus,
+  &:hover {
+    background-color: $brand-primary;
+  }
+  &:focus,
+  &:hover,
+  &:focus i,
+  &:hover i{
+    color: $white;
+  }
+}
+
+.btn-secondary,
+.btn-secondary i {
+  color: $secondary;
 
   &:focus,
   &:hover {
@@ -63,18 +163,8 @@
   color: #666;
 }
 
-
 .btn-secondary {
-  background-color: $brand-secondary;
   color: $black;
-}
-.btn-secondary,
-.btn-secondary i {
-
-  &:focus,
-  &:hover {
-    background-color: $brand-secondary-light;
-  }
 }
 
 .btn-default,

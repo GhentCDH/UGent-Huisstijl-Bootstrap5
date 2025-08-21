@@ -17,10 +17,13 @@ $desktop-range: (992px, 1440px);
 $white: #fff;
 $black: #202020;
 $blue: #1E64C8;
+$primary: #1E64C8;
 $brand-primary: #1E64C8;
 $brand-secondary: #FFD200;
+$secondary: #FFD200;
 $brand-secondary-light: #fff0b7;
 $brand-tertiary: #e9f0fa;
+$tertiary: #e9f0fa;
 $border-color: #CCCCCC;
 $border-color-light: #DDDDDD;
 $brand-warning: #fffae5;
@@ -37,11 +40,9 @@ $brand-faculty9: #27ABAD;
 $brand-faculty10: #BE5190;
 $brand-faculty11: #71A860;
 
-
 // Component colors
 $default-text-color: $black;
 $dark-text-color: #646464;
-
 
 // Font families
 $default-font-family: 'PannoTextNormal', Arial, sans-serif;
@@ -171,3 +172,11 @@ $form-select-indicator: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/20
 $form-check-margin-bottom: 0.5rem;
 $form-check-input-border: 2px solid $brand-primary;
 $form-check-input-border-radius: 0;
+
+// Buttons
+$btn-padding-x: 15px;
+$btn-padding-y: 13px;
+$btn-font-family: $medium-font-family;
+$btn-font-size: $fz-default;
+$btn-line-height: 15px;
+
