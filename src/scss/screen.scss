@@ -1,4 +1,8 @@
 @import 'settings';
+// import missing alert mixin (deprecated in 5.3)
+$enable-deprecation-messages: false !default;
+@import '~bootstrap/scss/mixins/deprecate';
+@import '~bootstrap/scss/mixins/alert';
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons';
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";

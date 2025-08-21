@@ -1,10 +1,9 @@
 //transitions
-a,
-button,
-.btn,
-a i{
-  @include transition(color $transition-duration-default $transition-ease-default, background-color $transition-duration-default $transition-ease-default);
-
+a, a i
+button, button i,
+.btn, .btn i
+{
+  @include transition(color $transition-duration-default $transition-ease-default, background-color $transition-duration-default $transition-ease-default, border-color $transition-duration-default $transition-ease-default);
 }
 
 //defaults
